@@ -1,4 +1,4 @@
-# Stockwise product dashboard
+# Product Management Dashboard
 
 A React inventory dashboard backed by a Laravel 12 JSON API. The Laravel activity includes Eloquent relationships, factories, seed data, JSON API product resources, pagination, and examples of filtering and aggregation.
 
@@ -27,7 +27,7 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-Open the Vite URL (normally `http://localhost:5173`). Vite proxies `/api` requests to `http://127.0.0.1:8000`.
+Open the Vite URL (`http://localhost:3000`). Vite proxies `/api` requests to `http://127.0.0.1:8001` (`SERVER_PORT=8001` in `backend/.env`; port 8000 is often taken by Windows/IIS).
 
 The default Laravel database is SQLite. The seeder creates five product categories, 2,000 products, users, addresses, orders, order items, and reviews.
 
